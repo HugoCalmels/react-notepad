@@ -59,13 +59,12 @@ const SideBar = (props) => {
 
 
 function cutArray(array) {
-  console.log('55555555555555555555')
-  
-  array.forEach((note) => {
-    let contentLength = note.textarea.split('').length
-    console.log(contentLength)
-  })
-  console.log('55555555555555555555')
+  if (array !== null) {
+    array.forEach((note) => {
+      let contentLength = note.textarea.split('').length
+      console.log(contentLength)
+    })
+  }
 }
 
 
